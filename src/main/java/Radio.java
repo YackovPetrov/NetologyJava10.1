@@ -2,16 +2,21 @@ public class Radio {
     private int minRadioStationNumber = 0;
 
     public int allRadioStationNumber;
-    public Radio(int number){
+
+    public Radio(int number) {
         allRadioStationNumber = minRadioStationNumber + number - 1;
     }
-    public Radio(){
+
+    public Radio() {
         allRadioStationNumber = 10;
     }
+
     public int radioStationNumber;
+
     public int getRadioStationNumber() {
         return radioStationNumber;
     }
+
     public void setRadioStationNumber(int newRadioStationNumber) {
         if (newRadioStationNumber < minRadioStationNumber) {
             return;
@@ -36,6 +41,7 @@ public class Radio {
         }
 
     }
+
     public int volume;
 
     public int getVolume() {
