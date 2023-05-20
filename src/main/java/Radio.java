@@ -1,7 +1,9 @@
 public class Radio {
     private int minRadioStationNumber = 0;
 
-    public int allRadioStationNumber;
+    private int allRadioStationNumber;
+
+    private int radioStationNumber;
 
     public Radio(int number) {
         allRadioStationNumber = minRadioStationNumber + number - 1;
@@ -10,8 +12,6 @@ public class Radio {
     public Radio() {
         allRadioStationNumber = 10;
     }
-
-    public int radioStationNumber;
 
     public int getRadioStationNumber() {
         return radioStationNumber;
@@ -42,7 +42,7 @@ public class Radio {
 
     }
 
-    public int volume;
+    private int volume;
 
     public int getVolume() {
         return volume;
@@ -70,3 +70,5 @@ public class Radio {
         }
     }
 }
+// Члены класса должны быть упорядочены в следующем порядке: сначала все поля, потом все конструкторы, потом все методы; чередовать члены разных типов нельзя.
+// Не понял, про чередование разных типов. Получается, что сначала идут поля, конструкторы и методы радиостанций, а потом идут поля, конструкторы и методы звука?
