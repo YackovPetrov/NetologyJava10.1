@@ -2,9 +2,11 @@ public class Radio {
     private int radioStationNumber;
 
     private int volume;
+
     public int getRadioStationNumber() {
         return radioStationNumber;
     }
+
     public void setRadioStationNumber(int newRadioStationNumber) {
         if (newRadioStationNumber < 0) {
             return;
